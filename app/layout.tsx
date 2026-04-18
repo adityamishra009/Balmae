@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, DM_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar/Navbar";
 
 const montserrat = Montserrat({
   variable: "--font-heading",
@@ -31,7 +30,6 @@ export default function RootLayout({
       className={`${montserrat.variable} ${dmSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background">
-        <Navbar />
         {children}
       </body>
     </html>

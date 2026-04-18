@@ -11,7 +11,8 @@ import {
   ShoppingCartIcon,
   MagnifyingGlassIcon,
   Bars3Icon,
-  XMarkIcon,
+  XMarkIcon,UsersIcon,
+  UserIcon
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
@@ -67,7 +68,7 @@ export default function Navbar() {
 
           {/* CART */}
           <div className="relative">
-            <button className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/60 shadow-sm">
+            <button className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/60 shadow-sm cursor-pointer">
               <ShoppingCartIcon className="w-5 h-5" />
             </button>
 
@@ -100,7 +101,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       {isOpen && (
-        <div className="md:hidden px-6 py-4 space-y-3 bg-white shadow-sm">
+        <div className="md:hidden px-6 py-3  bg-white shadow-sm">
 
           {/* NAV LINKS */}
           {navLinks.map((link) => (
@@ -110,12 +111,15 @@ export default function Navbar() {
           ))}
 
           {/* LOGIN (NavLink jaisa width) */}
+          
           <Link
-            href="/login"
-            className="block  w-1/4 px-4 py-4 rounded-lg bg-primary text-white text-sm font-medium"
-          >
-            Login
-          </Link>
+  href="/login"
+  className="flex items-center gap-2 rounded-lg text-sm font-medium translate-x-2">
+
+  <UserIcon className="w-5 h-5" />
+  <span>Login</span>
+</Link> 
+
         </div>
       )}
     </nav>
