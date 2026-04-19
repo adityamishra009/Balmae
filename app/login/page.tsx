@@ -39,7 +39,7 @@ export default function LoginPage() {
         <div className="relative">
           <input
             type={showPassword ? "text" : "password"}
-            placeholder="••••••••"
+            placeholder="Enter password"
             className="w-full h-11 px-4 pr-11 rounded-xl border border-gray-500 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
           />
           <button
@@ -66,8 +66,7 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <button
           type="submit"
-          className="w-full h-11 bg-primary hover:bg-primary-dark text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-md hover:-translate-y-0.5 hover:shadow-lg cursor-pointer"
-        >
+          className="w-full h-11 bg-primary hover:bg-primary-dark text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-md hover:-translate-y-0.5 hover:shadow-lg cursor-pointer">
           Login
         </button>
       </div>
