@@ -31,7 +31,7 @@ export default function Home() {
   let charIndex = 0;
 
   return (
-    <main className="min-h-screen bg-background flex flex-col overflow-hidden">
+    <main className="min-h-screen  flex flex-col overflow-hidden">
       <Navbar />
 
       <section className="relative flex-1 flex flex-col items-center px-4 sm:px-6 pt-20 sm:pt-24 md:pt-28">

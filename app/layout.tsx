@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${dmSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background">
+      <body className="min-h-screen w-full flex flex-col bg-[#f6f7ff]">
         {children}
       </body>
     </html>
