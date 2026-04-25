@@ -2,7 +2,7 @@ export default function Tabs({ activeTab, setActiveTab }: any) {
   const tabs = ["notes", "pyq", "mock"];
 
   return (
-    <div style={{ display: "flex", gap: "25px", borderBottom: "1px solid #eee", paddingBottom: "10px" }}>
+    <div style={{ display: "flex", gap: "25px", borderBottom: "1px solid #eee", paddingBottom: "10px",justifyContent: "center",}}>
       {tabs.map((tab) => (
         <div
           key={tab}

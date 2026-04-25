@@ -32,10 +32,10 @@ export default function Mock({ exam = "cuet" }: { exam?: string }) {
   }, [exam]);
 
   return (
-    <div style={{ padding: "40px 20px", maxWidth: "1100px", margin: "auto" }}>
+    <div style={{ padding: "40px 20px", maxWidth: "1100px", margin: "auto",  justifyContent: "center"}}>
       <h2 style={{ marginBottom: "20px" }}>{exam.toUpperCase()} Mock Tests</h2>
 
-      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" ,justifyContent: "center"}}>
+      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" , justifyContent: "center",}}>
         {tests.map((t) => (
           <div
             key={t.id}

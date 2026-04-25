@@ -7,7 +7,8 @@ export default function ExamSelector({
     <div style={{ marginBottom: "30px" }}>
       <h2 style={{ marginBottom: "15px" }}>Choose Your Exam</h2>
 
-      <div style={{ display: "flex", gap: "15px" }}>
+      <div style={{ display: "flex", gap: "15px", justifyContent: "center",
+    flexWrap: "wrap", }}>
         {exams.map((exam: any) => (
           <div
             key={exam.id}
@@ -22,6 +23,7 @@ export default function ExamSelector({
                   : "1px solid #ddd",
               background:
                 activeExam === exam.id ? "#f0edff" : "#fff",
+                
             }}
           >
             {exam.name}

@@ -16,7 +16,14 @@ export default function StudyPage() {
   const [activeTab, setActiveTab] = useState("notes");
 
   return (
-    <div style={{ padding: "40px 20px" }}>
+    <div
+  style={{
+    maxWidth: "1200px",
+    margin: "0 auto",          // ⭐ center page
+    padding: "40px 20px",
+    textAlign: "center",       // ⭐ text भी center
+  }}
+>
       
       {/* EXAM SELECTOR */}
       <ExamSelector
