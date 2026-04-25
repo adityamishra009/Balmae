@@ -36,12 +36,13 @@ export default function Hero() {
       <div className="flex flex-col items-center px-6 pt-10 pb-12 md:hidden">
 
         {/* IMAGE TOP */}
-        <div style={{ position: "relative", width: "100%", maxWidth: 340, aspectRatio: "1/1" }}>
+        <div style={{ width: "100%", maxWidth: 340 }}>
           <Image
             src="/imagehero.png"
             alt="BALMAE Hero"
-            fill
-            style={{ objectFit: "contain", mixBlendMode: "multiply" }}
+            width={340}
+            height={340}
+            style={{ objectFit: "contain", width: "100%", height: "auto" }}
             priority
           />
         </div>
@@ -195,17 +196,19 @@ export default function Hero() {
             maxWidth: 640,
             aspectRatio: "1/1",
             alignSelf: "flex-start",
-            marginTop: "-120px",
+            marginTop: "-20px",
             marginRight: "-48px",
           }}>
             <Image
               src="/imagehero.png"
               alt="BALMAE Hero"
-              fill
+              width={640}
+              height={640}
               style={{
                 objectFit: "contain",
                 objectPosition: "bottom right",
-                mixBlendMode: "multiply",
+                width: "100%",
+                height: "auto",
               }}
               priority
             />

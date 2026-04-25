@@ -55,16 +55,17 @@ export default function Navbar() {
         <div className="flex items-center gap-4 md:gap-8">
 
           {/* SEARCH */}
-          <div className="flex items-center bg-white/60 h-8 md:h-9 px-2 md:px-3 rounded-xl shadow-sm w-28 md:w-44">
-            
-            <input
-              type="text"
-              placeholder="Search..."
-              className="flex-1 min-w-0 bg-transparent outline-none text-xs md:text-sm pl-1"
-            />
-
-            <MagnifyingGlassIcon className="flex-shrink-0 w-4 h-4 md:w-6 md:h-6 text-gray-500 ml-1 mr-1" />
-          </div>
+          {/* SEARCH */}
+<div className="flex items-center border border-gray-200 rounded-xl h-9 px-2 w-44">
+  <input
+    type="text"
+    placeholder="Search..."
+    className="w-full bg-transparent outline-none text-sm text-gray-700 placeholder:text-gray-400 pr-2"
+  />
+  <div className="p-1.5 rounded-lg cursor-pointer transition-all duration-300 hover:bg-gray-100 flex-shrink-0">
+    <MagnifyingGlassIcon className="w-4 h-4 text-gray-500" />
+  </div>
+</div>
 
           {/* CART */}
           <div className="relative">
