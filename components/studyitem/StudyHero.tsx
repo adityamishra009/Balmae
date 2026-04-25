@@ -58,20 +58,24 @@ export default function StudyHero() {
             need to succeed.
           </p>
 
-          <button
-            style={{
-              background: "#ff3b3b",
-              color: "#fff",
-              border: "none",
-              padding: "14px 20px",
-              borderRadius: "8px",
-              fontSize: "15px",
-              cursor: "pointer",
-              marginBottom: "30px",
-            }}
-          >
-            ▶ Visit Edtrategy on YouTube
-          </button>
+         <a
+  href="https://www.youtube.com/@edtrategy"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "inline-block",
+    background: "#ff3b3b",
+    color: "#fff",
+    padding: "14px 20px",
+    borderRadius: "8px",
+    textDecoration: "none",
+    fontSize: "15px",
+    marginBottom: "30px",
+    
+  }}
+>
+  ▶ Visit Edtrategy on YouTube
+</a>
 
           {/* STATS */}
           <div
